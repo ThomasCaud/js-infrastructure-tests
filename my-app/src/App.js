@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Addition from './components/Addition'
+import Addition from './components/Addition';
+import Pow from './components/Pow';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Addition/>
+        <Pow/>
       </div>
     );
   }
