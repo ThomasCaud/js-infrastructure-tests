@@ -5935,7 +5935,7 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@^11.5.1:
+jsdom@^11.11.0, jsdom@^11.5.1:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-11.12.0.tgz#1a80d40ddd378a1de59656e9e6dc5a3ba8657bc8"
   integrity sha512-y8Px43oyiBM13Zc1z780FrfNLJCXTL40EWlty/LXUtcjykRBNgLlCjWXpfSPBl2iv+N7koQN+dvqszHZgT/Fjw==
@@ -6644,6 +6644,13 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mocha-jsdom@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mocha-jsdom/-/mocha-jsdom-2.0.0.tgz#a77922342247011fb510b1b645f3d2bc100521ac"
+  integrity sha512-+3D++FPXHXEesbBD7Q/r4dkc3XzVFMPLJVIECaQ685dj9qKQYzliqX8IXyIUbUL4x1QfgD9h8Zao8cn03NKKEA==
+  dependencies:
+    jsdom "^11.11.0"
 
 mocha@^6.0.2:
   version "6.0.2"

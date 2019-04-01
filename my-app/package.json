@@ -8,6 +8,7 @@
     "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
+    "mocha-jsdom": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
@@ -18,8 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha -r ts-node/register tests/**/*.test.*",
-    "test-json": "mocha -r ts-node/register --reporter json tests/**/*.test.*",
+    "test": "mocha -r ts-node/register -r tests/setup.js tests/**/*.test.*",
+    "test-json": "mocha -r ts-node/register -r tests/setup.js --reporter json tests/**/*.test.*",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
