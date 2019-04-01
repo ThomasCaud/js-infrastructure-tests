@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { add } from '../utils/Operations';
+import { pow } from '../utils/Operationsjs';
 
-class Addition extends Component {
+class Pow extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,17 +24,17 @@ class Addition extends Component {
   render() {
     return (
       <div className="operation">
-        <h1>Test with .jsx file - Addition</h1>
+        <h1>Test with .jsx file - Pow</h1>
           <form>
-              <input type="number" value={this.state.numberA} onChange={this.handleChangeA} />
-              +
+              <input type="number" value={this.state.numberA} onChange={this.handleChangeA} id='a' />
+              ^
               <input type="number" value={this.state.numberB} onChange={this.handleChangeB} />
               =
-              {add(parseInt(this.state.numberA), parseInt(this.state.numberB))}
+              {pow(this.state.numberA, this.state.numberB)}
           </form>
       </div>
     );
   }
 }
 
-export default Addition;
+export default Pow;

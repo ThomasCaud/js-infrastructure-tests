@@ -8,16 +8,19 @@
     "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
+    "mocha-jsdom": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
+    "react-test-renderer": "^16.8.6",
     "ts-node": "^8.0.3",
     "typescript": "^3.3.4000"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "test": "mocha -r ts-node/register -r tests/setup.js tests/**/*.test.*",
+    "test-json": "mocha -r ts-node/register -r tests/setup.js --reporter json tests/**/*.test.*",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
@@ -31,6 +34,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "electron": "^4.1.1"
+    "chai-enzyme": "^1.0.0-beta.1",
+    "electron": "^4.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2"
   }
 }

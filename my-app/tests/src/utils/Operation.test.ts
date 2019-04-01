@@ -17,7 +17,7 @@ describe('substract function', () => {
 });
 
 describe('multiply function', () => {
-	it('should return 30', () => {
+	it('should return 30 (and failed because TDD ; function is not implemented yet)', () => {
 		const result = multiply(5,6);
 		expect(result).to.equal(30);
 	});
