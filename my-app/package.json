@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha -r ts-node/register tests/**/*.test.*",
+    "test-json": "mocha -r ts-node/register --reporter json tests/**/*.test.*",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
