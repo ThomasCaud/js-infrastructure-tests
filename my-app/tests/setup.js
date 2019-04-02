@@ -1,4 +1,8 @@
 // Since enzyme's mount API requires a DOM, JSDOM is required in order to use mount
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import chai from 'chai';
+import chaiEnzyme from 'chai-enzyme';
 
 const { JSDOM } = require('jsdom');
 
@@ -25,11 +29,5 @@ global.cancelAnimationFrame = function (id) {
 };
 copyProps(window, global);
 
-
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
-
-import chai from 'chai';
-import chaiEnzyme from 'chai-enzyme';
 chai.use(chaiEnzyme());

@@ -11,6 +11,11 @@
 # production
 /build
 
+/.vs
+
+# unit tests reports
+/mochawesome-report
+
 # misc
 .DS_Store
 .env.local
