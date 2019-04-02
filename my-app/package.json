@@ -21,9 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha -r ts-node/register -r tests/setup.js --recursive tests/**/*.test.*",
-    "test-json": "mocha -r ts-node/register -r tests/setup.js --recursive --reporter json tests/**/*.test.*",
-    "test-html": "mocha -r ts-node/register -r tests/setup.js --recursive --reporter mochawesome tests/**/*.test.*",
-    "test-coverage": "nyc mocha -r ts-node/register -r tests/setup.js --recursive tests/**/*.test.*",
+    "test-json": "yarn test --reporter json",
+    "test-html": "yarn test mochawesome",
+    "test-coverage": "nyc yarn test",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
