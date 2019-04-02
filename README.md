@@ -15,7 +15,7 @@
 * `yarn test-coverage-json` in order to launch unit tests and get coverage info in json format. The obtain report is in the coverage folder.
 * `yarn test-coverage-html` in order to launch unit tests and get coverage info in html format. The obtain report is in the coverage folder.
 
-## Milestone 1
+## Milestone 1 - Tests à posteriori
 - [x] Tests on simple js file
 - [x] Tests on typescript file
 - [x] Tests on react file
@@ -24,6 +24,11 @@
 - [x] Create command for HTML export
 - [x] Get coverage info
 - [x] Get coverage info in the JSON/HTML export
+
+## Milestone 2 - Tests en continu
+- [ ] Wallaby study
+- [ ] VS code's interfacing
+- [ ] Dashboard
 
 ## Notes
 * `nyc` to do coverage tests
