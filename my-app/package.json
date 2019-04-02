@@ -24,6 +24,8 @@
     "test-json": "yarn test --reporter json",
     "test-html": "yarn test mochawesome",
     "test-coverage": "nyc yarn test",
+    "test-coverage-json": "nyc --reporter json yarn test",
+    "test-coverage-html": "nyc --reporter html yarn test",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
