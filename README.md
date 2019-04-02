@@ -1,8 +1,12 @@
+## Description
+The goal is to define a unit test infrastructure for electron-react-typescript app, with the least possible configuration (no babel either webpack, no transpilation, etc.).
+
 ## Commands
 ### Installation
 * `yarn install` after cloning the repo
 
 ### Launch the app
+* `yarn start` in order to launch the app
 * `yarn electron-start` or 'electron .' in order to launch the electron app
 
 ### Launch unit tests
@@ -24,6 +28,7 @@
 - [x] Create command for HTML export
 - [x] Get coverage info
 - [x] Get coverage info in the JSON/HTML export
+- [ ] Look at snapshot
 
 ## Milestone 2 - Tests en continu
 - [ ] Wallaby study
