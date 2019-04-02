@@ -1,4 +1,4 @@
-function who() {
+export const who = () => {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve('He');
@@ -23,7 +23,7 @@ function where() {
 }
 
 async function msgSequentially() {
-  const a = await who();
+  const a = await exports.who();
   const b = await what();
   const c = await where();
 
@@ -31,9 +31,9 @@ async function msgSequentially() {
 }
 
 async function msgInParallel() {
-  const [a, b, c] = await Promise.all([who(), what(), where()]);
+  const [a, b, c] = await Promise.all([exports.who(), what(), where()]);
 
   return a + " " + b + " " + c;
 }
 
-export { msgSequentially, msgInParallel };
+export { who, msgSequentially, msgInParallel };

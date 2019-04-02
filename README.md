@@ -19,7 +19,7 @@
 - [x] Tests on simple js file
 - [x] Tests on typescript file
 - [x] Tests on react file
-- [ ] Tests async/await functions (WIP)
+- [x] Tests async/await functions (WIP)
 - [x] Create command for JSON export
 - [x] Create command for HTML export
 - [x] Get coverage info
