@@ -9,6 +9,7 @@
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
     "mochawesome": "^3.1.1",
+    "nyc": "^13.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
@@ -22,6 +23,7 @@
     "test": "mocha -r ts-node/register -r tests/setup.js --recursive tests/**/*.test.*",
     "test-json": "mocha -r ts-node/register -r tests/setup.js --recursive --reporter json tests/**/*.test.*",
     "test-html": "mocha -r ts-node/register -r tests/setup.js --recursive --reporter mochawesome tests/**/*.test.*",
+    "test-coverage": "nyc mocha -r ts-node/register -r tests/setup.js --recursive tests/**/*.test.*",
     "eject": "react-scripts eject",
     "electron-start": "electron ."
   },
@@ -39,5 +41,24 @@
     "electron": "^4.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2"
+  },
+  "nyc": {
+    "all": true,
+    "extension": [
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "exclude": [
+      "src/react-app-env.d.ts",
+      "src/serviceWorker.js"
+    ]
   }
 }
