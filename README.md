@@ -24,3 +24,8 @@
 - [x] Create command for HTML export
 - [x] Get coverage info
 - [x] Get coverage info in the JSON/HTML export
+
+## Notes
+* `nyc` to do coverage tests
+* `mochawesome` to generate better mocha reports
+* `Sinon.js` to help us mock, stub, fake and spy
