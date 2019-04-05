@@ -12,7 +12,7 @@ module.exports = function (wallaby) {
       ],
 
       compilers: {
-        '**/*.(t|j)s?(x)': wallaby.compilers.typeScript({
+        'my-app/src/**/*.+(t|j)s?(x)': wallaby.compilers.typeScript({
           module: 'commonjs',
           jsx: 'React'
         })
