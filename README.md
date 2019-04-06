@@ -19,6 +19,13 @@ The goal is to define a unit test infrastructure for electron-react-typescript a
 * `yarn test-coverage-json` in order to launch unit tests and get coverage info in json format. The obtain report is in the coverage folder.
 * `yarn test-coverage-html` in order to launch unit tests and get coverage info in html format. The obtain report is in the coverage folder.
 
+## Continuous test
+* You need to install the wallaby extension on Visual Studio Code
+* `cmd + Schift + R, R` to launch wallaby
+* `cmd + Schift + R, S` to stop wallaby
+* Once launched, you just need to edit your file to see the new unit tests results!
+* Go to `localhost:51245` to acess to wallaby server: dashboard with the unit tests, and the coverages info
+
 ## Milestone 1 - Tests à posteriori
 - [x] Tests on simple js file
 - [x] Tests on typescript file
@@ -31,9 +38,10 @@ The goal is to define a unit test infrastructure for electron-react-typescript a
 - [ ] Look at snapshot
 
 ## Milestone 2 - Tests en continu
-- [ ] Wallaby study
-- [ ] VS code's interfacing
-- [ ] Dashboard
+- [x] Wallaby study
+- [x] VS code's interfacing
+- [x] Dashboard
+- [ ] Fix mount issue
 
 ## Notes
 * `nyc` to do coverage tests
