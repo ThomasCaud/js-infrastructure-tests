@@ -5,10 +5,7 @@ module.exports = function (wallaby) {
  
   return {
     files: [
-      'my-app/src/**/*.js',
-      'my-app/src/**/*.ts',
-      'my-app/src/**/*.tsx',
-      'my-app/src/**/*.jsx',
+      'my-app/src/**/*.+(t|j)s?(x)',
       'my-app/tests/setup.js',
       'tsconfig.json'
     ],
@@ -34,7 +31,7 @@ module.exports = function (wallaby) {
     },
 
     testFramework: 'mocha',
-    debug: true,
+
     env: {
       type: 'node',
       runner: 'node'
