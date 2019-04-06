@@ -35,13 +35,12 @@ The goal is to define a unit test infrastructure for electron-react-typescript a
 - [x] Create command for HTML export
 - [x] Get coverage info
 - [x] Get coverage info in the JSON/HTML export
-- [ ] Look at snapshot
 
 ## Milestone 2 - Tests en continu
 - [x] Wallaby study
 - [x] VS code's interfacing
 - [x] Dashboard
-- [ ] Fix mount issue
+- [x] Fix mount issue
 
 ## Notes
 * `nyc` to do coverage tests
