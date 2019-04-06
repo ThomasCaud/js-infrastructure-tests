@@ -16,12 +16,13 @@
     "react-test-renderer": "^16.8.6",
     "sinon": "^7.3.1",
     "ts-node": "^8.0.3",
+    "tsconfig-paths": "^3.8.0",
     "typescript": "^3.3.4000"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha -r ts-node/register -r tests/setup.js --recursive tests/**/*.test.*",
+    "test": "mocha -r ts-node/register -r my-app/tests/setup.js --recursive my-app/tests/**/*.test.*",
     "test-json": "yarn test --reporter json",
     "test-html": "yarn test mochawesome",
     "test-coverage": "nyc yarn test",

@@ -1,4 +1,6 @@
 function add(x: number, y: number): number {
+	console.log("test");
+	var i = 5;
 	return x + y;
 }
 
