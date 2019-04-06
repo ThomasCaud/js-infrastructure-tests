@@ -11,7 +11,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
-    "jsx": "react"
+    "jsx": "react",
+    "importHelpers": true
   },
   "include": [
     "my-app/src"

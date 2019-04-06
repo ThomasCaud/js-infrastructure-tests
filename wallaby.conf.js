@@ -1,12 +1,15 @@
-// require("./my-app/tests/setup");
+require("ts-node/register");
 
 module.exports = function (wallaby) {
+  var mysetup = require("./my-app/tests/setup");
+ 
   return {
     files: [
       'my-app/src/**/*.js',
       'my-app/src/**/*.ts',
       'my-app/src/**/*.tsx',
       'my-app/src/**/*.jsx',
+      'my-app/tests/setup.js',
       'tsconfig.json'
     ],
 
@@ -16,8 +19,6 @@ module.exports = function (wallaby) {
       }
     ],
 
-    // As I set tsconfig.json in my file list
-    // I guess I don't need to write the 'compilers' object above
     compilers: {
       'my-app/+(src|tests)/**/*.+(t|j)s?(x)': wallaby.compilers.typeScript({
         outDir: './any'
@@ -26,6 +27,10 @@ module.exports = function (wallaby) {
 
     preprocessors: {
       '**/*.jsts': file => file.changeExt('js').content
+    },
+
+    setup: function() {
+      require("./my-app/tests/setup");
     },
 
     testFramework: 'mocha',
