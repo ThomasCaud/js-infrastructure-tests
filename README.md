@@ -44,5 +44,5 @@ The goal is to define a unit test infrastructure for electron-react-typescript a
 
 ## Notes
 * `nyc` to do coverage tests
-* `mochawesome` to generate better mocha reports
+* `mochawesome` to generate better mocha reports. Note: it could be deleted. Only cosmetic.
 * `Sinon.js` to help us mock, stub, fake and spy

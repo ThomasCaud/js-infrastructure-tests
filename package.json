@@ -4,8 +4,6 @@
   "main": "public/main.js",
   "private": true,
   "dependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
     "mochawesome": "^3.1.1",
@@ -22,7 +20,7 @@
     "build": "react-scripts build",
     "test": "mocha -r ts-node/register -r my-app/tests/setup.js --recursive my-app/tests/**/*.test.*",
     "test-json": "yarn test --reporter json",
-    "test-html": "yarn test mochawesome",
+    "test-html": "yarn test --reporter mochawesome",
     "test-coverage": "nyc yarn test",
     "test-coverage-json": "nyc --reporter json yarn test",
     "test-coverage-html": "nyc --reporter html yarn test",
