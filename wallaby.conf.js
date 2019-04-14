@@ -17,9 +17,7 @@ module.exports = function (wallaby) {
     ],
 
     compilers: {
-      'my-app/+(src|tests)/**/*.+(t|j)s?(x)': wallaby.compilers.typeScript({
-        outDir: './any'
-      })
+      'my-app/+(src|tests)/**/*.+(t|j)s?(x)': wallaby.compilers.typeScript({})
     },
 
     preprocessors: {
