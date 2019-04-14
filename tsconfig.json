@@ -6,8 +6,7 @@
     "esModuleInterop": true,
     "strict": true,
     "module": "commonjs",
-    "jsx": "react",
-    "importHelpers": true
+    "jsx": "react"
   },
   "include": [
     "my-app/src"
