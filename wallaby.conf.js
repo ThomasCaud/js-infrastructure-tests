@@ -6,8 +6,7 @@ module.exports = function (wallaby) {
   return {
     files: [
       'my-app/src/**/*.+(t|j)s?(x)',
-      'my-app/tests/setup.js',
-      'tsconfig.json'
+      'my-app/tests/setup.js'
     ],
 
     tests: [
@@ -31,8 +30,7 @@ module.exports = function (wallaby) {
     testFramework: 'mocha',
 
     env: {
-      type: 'node',
-      runner: 'node'
+      type: 'node'
     }
   };
 };
